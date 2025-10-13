@@ -2,6 +2,7 @@
 public class Dog {
 	private String dogName,dogBreed;
 	private int dogAge;
+	private static int count;
 	
 	public void displayDogInformation() {
 		System.out.println(this.dogName+" , "
@@ -22,6 +23,11 @@ public class Dog {
 		this.dogName=dogName;
 		this.dogBreed=dogBreed;
 		this.dogAge=dogAge;
+		count++;
+	}
+	
+	public static int getCounter() {
+		return count;
 	}
 	
 

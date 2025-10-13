@@ -11,11 +11,21 @@ public class Main {
 //		System.out.println(empInfo);
 //		
 		
-		Dog dog1=new Dog("Husky","Bruno",2);
-		dog1.displayDogInformation();
+//		Dog dog1=new Dog("Husky","Bruno",2);
+//		dog1.displayDogInformation();
+//		
+//		Dog dog2=new Dog("s","Neko",4);
+//		dog2.displayDogInformation();
+//		
+//		int dogCount=Dog.getCounter();
+//		System.out.println("Number of dogs :"+dogCount);
 		
-		Dog dog2=new Dog("Pamerian","Neko",4);
-		dog2.displayDogInformation();
+		
+		Triangle triangle1=new Triangle(10);
+//		triangle1.height=500;
+		triangle1.calculateArea();
+		triangle1.displayTriangleData();
+		
 		
 		
 	}
