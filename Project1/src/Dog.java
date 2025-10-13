@@ -1,8 +1,12 @@
 
-public class Dog {
+public class Dog extends Animal {
 	private String dogName,dogBreed;
 	private int dogAge;
 	private static int count;
+	
+	public String getDogBreed() {
+		return this.dogBreed;
+	}
 	
 	public void displayDogInformation() {
 		System.out.println(this.dogName+" , "
@@ -30,5 +34,14 @@ public class Dog {
 		return count;
 	}
 	
+	
+	public void makeNoise() {
+		System.out.println("Dog is barking !!");
+	}
 
+	public void trainDog() {
+		System.out.println("I can be trained!! You need to be better at training!!");
+	}
+	
+	
 }

@@ -21,12 +21,40 @@ public class Main {
 //		System.out.println("Number of dogs :"+dogCount);
 		
 		
-		Triangle triangle1=new Triangle(10);
-//		triangle1.height=500;
-		triangle1.calculateArea();
-		triangle1.displayTriangleData();
+//		Triangle triangle1=new Triangle(10);
+////		triangle1.height=500;
+//		triangle1.calculateArea();
+//		triangle1.displayTriangleData();
 		
 		
+		/*
+		 * in inheritance, the methods will be searched in the current object first, if is available in current object, that method is
+		 * invoked. If not, it goes to parent object and that is invoked. If it not avaiable there also it generates error!!
+		 */
+		
+//		Cat cat1=new Cat();
+		Animal cat1=new Cat(); //polymorphic Reference
+		cat1.eat();
+		cat1.makeNoise();
+		cat1.sleep();
+		//cat1.readNewsPaper();
+		
+		Animal dog1=new Dog("Husky","Bruno",2);
+		dog1.eat();
+		dog1.makeNoise();
+		dog1.sleep();
+//		dog1.displayDogInformation();//specific method from subclass
+		
+		((Dog) dog1).trainDog();
+		
+		
+		getAnimalInformation(cat1);
+		
+		
+	}
+
+	private static void getAnimalInformation(Animal dog1) {
+		// TODO Auto-generated method stub
 		
 	}
 }
