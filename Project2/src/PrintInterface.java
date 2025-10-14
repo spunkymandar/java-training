@@ -1,4 +1,5 @@
 
+@FunctionalInterface
 public interface PrintInterface {
 	public String printInformation();
 
@@ -7,4 +8,5 @@ public interface PrintInterface {
 	 * 2. interfaces cannot contain any constructor
 	 * 3. From java8 interfaces can contain the default method
 	 */
+//	public String doSomethingElse();
 }
