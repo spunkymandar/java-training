@@ -1,0 +1,6 @@
+Create Employee class with id, name and salary 
+ 
+create the user-defined exception SalaryException, which will be raised if the salary is less than 10000 USD
+ 
+Else the object will be created !!
+ 
