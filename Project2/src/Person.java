@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
@@ -24,7 +25,14 @@ public class Person implements Serializable{
 		oos.writeUTF(address.country);
 	}
 	
-	
+    private void readObject(ObjectInputStream ois) throws IOException, ClassNotFoundException {
+        ois.defaultReadObject(); // deserialize default fields
+        // manually deserialize Address
+        String city = ois.readUTF();
+        String country = ois.readUTF();
+        address = new Address(city, country);
+    }
+
 	
 
 }
