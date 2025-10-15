@@ -1,5 +1,6 @@
+import java.util.Objects;
 
-public class Student {
+public class Student implements Comparable<Student>{
 	int id;
 	String name;
 	
@@ -19,7 +20,7 @@ public class Student {
 		System.out.println("Equals method invoked by :"+this.name);
 		// TODO Auto-generated method stub
 		Student s=(Student)obj;
-		if(this.id==s.id && this.name.equals(s.name))
+		if(this.id==s.id && Objects.equals(this.name, s.name))
 			return true;
 		return false;
 	}
@@ -29,10 +30,14 @@ public class Student {
 		// TODO Auto-generated method stub
 		return this.name.length()+3;
 	}
-	
-	
-	
-	
+
+	@Override
+	public int compareTo(Student o) {
+		// TODO Auto-generated method stub
+		
+		
+		return Integer.compare(o.id, this.id);
+	}
 	
 	
 
