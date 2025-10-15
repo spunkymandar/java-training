@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
@@ -17,8 +18,10 @@ public class StudentTreeSetDemo {
 		studentTreeSet.add(s3);
 		
 		System.out.println(studentTreeSet);
+		List<Student> mylist=new ArrayList<Student>(studentTreeSet);
 		
-//		Collections.sort(, null);
+		Collections.sort(mylist, new StudentNameComparator());
+		System.out.println(mylist);
 	}
 
 }
