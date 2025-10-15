@@ -14,6 +14,10 @@ public class Student implements Comparable<Student>{
 	public String toString() {
 		return "Student [id=" + id + ", name=" + name + "]";
 	}
+	
+	public String getName() {
+		return this.name;
+	}
 
 	@Override
 	public boolean equals(Object obj) {
