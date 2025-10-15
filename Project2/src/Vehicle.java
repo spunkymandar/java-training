@@ -6,6 +6,12 @@ class Vehicle  {
     String brand;
     int wheels;
 
+    Vehicle(){
+    	
+    }
+    
+
+    
     Vehicle(String brand, int wheels) {
         this.brand = brand;
         this.wheels = wheels;
