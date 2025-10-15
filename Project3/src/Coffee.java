@@ -12,4 +12,8 @@ public enum Coffee {
 		return this.price;
 	}
 
+	// Calculate final price based on selected size
+    public double getTotalPrice(CoffeeSize size) {
+        return price * size.getMultiplier();
+    }
 }
