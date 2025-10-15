@@ -1,6 +1,9 @@
 
 // Subclass inherits serializability
-class Car extends Vehicle {
+
+import java.io.Serializable;
+
+class Car extends Vehicle implements Serializable {
     private static final long serialVersionUID = 2L;
     String model;
     double price;
